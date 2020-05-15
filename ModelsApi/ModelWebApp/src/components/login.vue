@@ -1,7 +1,14 @@
 <template>
-    <div class="CreateNewModel">
-        <h1>{{ msg }}</h1>
-        <p>Hej med dig login</p>
+    <div class="Login">
+
+        <md-card>
+
+            <md-card-header>
+                <div><h>Login</h></div>
+            </md-card-header>
+
+            <md-button>Login</md-button>
+        </md-card>
     </div>
 </template>
 
