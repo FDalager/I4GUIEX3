@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Courses\\I4GUI\\Obl opg\\Opg 3 - Vue\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
+    "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
   },
   "projects": {
-    "C:\\Courses\\I4GUI\\Obl opg\\Opg 3 - Vue\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
+    "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Courses\\I4GUI\\Obl opg\\Opg 3 - Vue\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "projectUniqueName": "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
         "projectName": "ModelsApi",
-        "projectPath": "C:\\Courses\\I4GUI\\Obl opg\\Opg 3 - Vue\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
-        "packagesPath": "C:\\Users\\Poul Ejnar\\.nuget\\packages\\",
-        "outputPath": "C:\\Courses\\I4GUI\\Obl opg\\Opg 3 - Vue\\ModelsApi\\ModelsApi\\obj\\",
+        "projectPath": "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Poul Ejnar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
