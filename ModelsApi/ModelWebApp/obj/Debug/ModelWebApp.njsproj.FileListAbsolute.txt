@@ -1,0 +1,2 @@
+C:\Users\Jonathan\Desktop\GUI_EX3\ModelsApi\ModelWebApp\obj\Debug\ModelWebApp.njsproj.CoreCompileInputs.cache
+C:\Users\Jonathan\Desktop\GUI_EX3\ModelsApi\ModelWebApp\bin\Microsoft.NodejsTools.WebRole.dll

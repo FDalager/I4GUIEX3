@@ -1,17 +1,21 @@
 <template>
     <div id="app">
-        <Home msg="Hello world!" />
+        <nav>
+            <router-link to="/">Home</router-link> |
+            <router-link to="/login">login</router-link> |
+            <router-link to="/CreateNewModel">CreateNewModel</router-link>
+            <router-link to="/CreateNewManager">CreateNewManager</router-link>
+            <router-link to="/CreateNewJob">CreateNewJob</router-link>
+            <router-link to="/JobView">JobView</router-link>
+        </nav>
+        <!-- component matched by the route will render here -->
+        <router-view></router-view>>
     </div>
 </template>
 
 <script>
-    import Home from './components/Home.vue';
-
     export default {
         name: 'app',
-        components: {
-            Home
-        }
     };
 </script>
 
