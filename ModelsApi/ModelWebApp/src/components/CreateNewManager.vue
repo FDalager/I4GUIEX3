@@ -2,31 +2,35 @@
     <div class="CreateNewManager">
         <form @submit ="createNewManagerFunction">
             <md-card class="md-layout-item">
-                    <md-card-header>
-                        <div class="md-title">Create New Manager</div>
-                    </md-card-header>
-                    <md-content>
-                        <md-field>
-                            <label>First Name</label>
-                            <md-input v-model="managerfirstname"/>
-                        </md-field>
+                <md-card-header>
+                    <div class="md-title">Create New Manager</div>
+                </md-card-header>
+                <md-content>
+                    <md-field>
+                        <label>First Name</label>
+                        <md-input v-model="managerfirstname" />
+                    </md-field>
 
-                        <md-field>
-                            <label>Last Name</label>
-                            <md-input v-model="managerlastname" />
-                        </md-field>
+                    <md-field>
+                        <label>Last Name</label>
+                        <md-input v-model="managerlastname" />
+                    </md-field>
 
-                        <md-field>
-                            <label>Email</label>
-                            <md-input v-model="manageremail"/>
-                        </md-field>
+                    <md-field>
+                        <label>Email</label>
+                        <md-input v-model="manageremail" />
+                    </md-field>
 
-                        <md-field>
-                            <label>Password</label>
-                            <md-input v-model="managerpassword" type="password"/>
-                        </md-field>
-                    </md-content>
-           </md-card>
+                    <md-field>
+                        <label>Password</label>
+                        <md-input v-model="managerpassword" type="password" />
+                    </md-field>
+                </md-content>
+                <md-card-action>
+                    <md-button type="submit" class="md-raised">Add New Manager</md-button>
+                </md-card-action>
+
+            </md-card>
         </form> 
     </div>
 </template>
@@ -58,8 +62,7 @@
                         'Authorization': 'Bearer ' + localStorage.getItem("token"),
                         'Content-Type': 'application/json'
                     })
-                })
-                .catch(error => alert("Error!!! " + error))
+                }).catch(error => alert("Error!!! " + error))
             }
         }
     }
@@ -68,7 +71,7 @@
 <style scoped>
     .md-layout-item {
         position: relative;
-        height: 400px;
+        height: 450px;
         width: 400px;
     }
 </style>
