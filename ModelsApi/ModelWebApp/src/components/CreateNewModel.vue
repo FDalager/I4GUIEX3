@@ -3,7 +3,6 @@
         <form id="m-app"
               @submit="checkForm">
         <md-card>
-            <md-ripple>
             <md-card-header>
                 <div class="md-title">Create New Model</div>
             </md-card-header>
@@ -123,7 +122,6 @@
             <md-card-action>
                 <md-button type="submit">Add New Model</md-button>
             </md-card-action>
-            </md-ripple>
         </md-card>
         </form>    
     </div>
