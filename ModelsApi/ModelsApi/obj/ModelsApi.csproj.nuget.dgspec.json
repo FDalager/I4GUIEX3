@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
+    "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
+    "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "projectUniqueName": "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
         "projectName": "ModelsApi",
-        "projectPath": "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
-        "packagesPath": "C:\\Users\\sebbe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\obj\\",
+        "projectPath": "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sebbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
