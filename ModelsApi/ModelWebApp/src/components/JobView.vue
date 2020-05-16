@@ -2,7 +2,7 @@
     <div class="md-layout">
         <md-card>
             <md-card-header>
-             <div class="md-title">Job liste</div>
+             <div class="md-title">Job List</div>
              </md-card-header>
         
             <md-card-content>

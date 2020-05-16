@@ -97,6 +97,7 @@
 <script>
 
     export default {
+        name: 'CreateNewModel',
         data: () => ({
                 model: {
                     firstName: "",
