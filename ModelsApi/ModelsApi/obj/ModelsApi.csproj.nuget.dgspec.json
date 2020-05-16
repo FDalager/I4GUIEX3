@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
+    "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
+    "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "projectUniqueName": "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
         "projectName": "ModelsApi",
-        "projectPath": "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
-        "packagesPath": "C:\\Users\\Jonathan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jonathan\\Desktop\\GUI_EX3\\ModelsApi\\ModelsApi\\obj\\",
+        "projectPath": "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "packagesPath": "C:\\Users\\sebbe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Jonathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,7 +51,7 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.CodeAnalysis.FxCopAnalyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -58,21 +61,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.3, )"
+              "version": "[3.1.4, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -105,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
