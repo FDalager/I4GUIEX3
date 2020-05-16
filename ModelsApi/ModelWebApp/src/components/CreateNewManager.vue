@@ -1,7 +1,9 @@
 <template>
     <div class="CreateNewManager">
-        <h1>{{ msg }}</h1>
-        <p>Hej med dig manager</p>
+        <form @submit.prevent ="createNewManagerFunction">
+            <md-card class="">
+            </md-card>
+        </form>
     </div>
 </template>
 
