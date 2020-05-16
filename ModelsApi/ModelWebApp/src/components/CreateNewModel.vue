@@ -6,6 +6,7 @@
             <md-ripple>
             <md-card-header>
                 <div class="md-title">Create New Model</div>
+            </md-card-header>
             <md-content>
             <md-field>
                     <label for="firstname">First Name</label>
