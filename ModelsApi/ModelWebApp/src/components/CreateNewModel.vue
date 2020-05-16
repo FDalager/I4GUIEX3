@@ -1,152 +1,130 @@
 <template>
-    <div class="CreateNewModel">
-        <h1>Create New Model!</h1>
+    <div class="md-layout-item">
         <form id="m-app"
               @submit="checkForm">
-
-            <div class="form-group">
-                <p>
+        <md-card>
+            <md-ripple>
+            <md-card-header>
+                <div class="md-title">Create New Model</div>
+            </md-card-header>
+            <md-content>
+            <md-field>
                     <label for="firstname">First Name</label>
-                    <input type="text" class="form-group"
-                           v-model="model.firstname"
-                           id="firstname">
-                </p>
-            </div>
+                    <md-input type="text" class="form-group"
+                           v-model="model.firstname" :md-options="countries"
+                           id="firstname"/>
+            </md-field>
 
-            <div class="form-group">
-                <p>
+            <md-field>
                     <label for="lastname">Last Name</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.lastname"
-                           id="lastname">
-                </p>
-            </div>
+                           id="lastname"/>
+            </md-field>
 
-        <div class="form-group">
-                <p>
+            <md-field>
                     <label for="email">Email</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.email"
-                           id="email">
-                </p>
-            </div>
+                           id="email"/>
+            </md-field>
 
-        <div class="form-group">
-                <p>
+            <md-field>
                     <label for="phoneno">Phone Number</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.phoneno"
-                           id="phoneno">
-                </p>
-            </div>
+                           id="phoneno"/>
+            </md-field>
 
-        <div class="form-group">
-                <p>
+            <md-field>
                     <label for="addresline1">Addres Line 1</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.addresline1"
-                           id="addresline1">
-                </p>
-            </div>
+                           id="addresline1"/>
+            </md-field>
 
-        <div class="form-group">
-                <p>
+            <md-field>
                     <label for="addresline2">Addres Line 2</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.addresline2"
-                           id="adressline2">
-                </p>
-            </div>
+                           id="adressline2"/>
+            </md-field>
 
-        <div class="form-group">
-                <p>
+            <md-field>
                     <label for="zip">Zip</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.zip"
-                           id="zip">
-                </p>
-            </div>
+                           id="zip"/>
+            </md-field>
 
-        <div class="form-group">
-                <p>
+            <md-field>
                     <label for="city">City</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.city"
-                           id="city">
-                </p>
-            </div>
-                <div class="form-group">
-                <p>
+                           id="city"/>
+            </md-field>
+
+            <md-field>
                     <label for="country">Country</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.country"
-                           id="country">
-                </p>
-            </div>
+                           id="country"/>
+            </md-field>
 
-                <div class="form-group">
-                <p>
+            <md-field>
                     <label for="birthdate">Birthdate</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.birthdate"
-                           id="birthdate">
-                </p>
-            </div>
+                           id="birthdate"/>
+            </md-field>
 
-                <div class="form-group">
-                <p>
+            <md-field>
                     <label for="nationality">Nationality</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.nationality"
-                           id="nationality">
-                </p>
-            </div>
+                           id="nationality"/>
+            </md-field>
 
-                <div class="form-group">
-                <p>
+            <md-field>
                     <label for="height">Height</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.height"
-                           id="height">
-                </p>
-            </div>
+                           id="height"/>
+            </md-field>
 
-                <div class="form-group">
-                <p>
+            <md-field>
                     <label for="shoesize">Shoesize</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model.number="model.shoesize"
-                           id="shoesize">
-                </p>
-            </div>
+                           id="shoesize"/>
+            </md-field>
 
-        <div class="form-group">
-                <p>
+            <md-field>
                     <label for="haircolor">Haircolor</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.haircolor"
-                           id="haircolor">
-                </p>
-            </div>
+                           id="haircolor"/>
+            </md-field>
 
-        <div class="form-group">
-                <p>
+            <md-field>
                     <label for="eyecolor">Eyecolor</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.eyecolor"
-                           id="eyecolor">
-                </p>
-            </div>
+                           id="eyecolor"/>
+            </md-field>
 
-        <div class="form-group">
-                <p>
+            <md-field>
                     <label for="comment">Comment</label>
-                    <input type="text" class="form-group"
+                    <md-input type="text" class="form-group"
                            v-model="model.comment"
-                           id="comment">
-                </p>
-            </div>
-        <button class="btn btn-primary" type="submit">Add New Model</button>
+                           id="comment"/>
+            </md-field>
+            </md-content>
+            <md-card-action>
+                <md-button type="submit">Add New Model</md-button>
+            </md-card-action>
+            </md-ripple>
+        </md-card>
         </form>    
     </div>
 </template>
