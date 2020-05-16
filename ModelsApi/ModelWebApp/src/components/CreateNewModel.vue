@@ -48,7 +48,7 @@
 
             <md-field>
                     <label>Country</label>
-                    <md-autocomplete v-model="model.country" :md-options="countries"/>
+                    <md-input v-model="model.country"/>
             </md-field>
 
             <md-field>
@@ -58,7 +58,7 @@
 
             <md-field>
                     <label>Nationality</label>
-                    <md-autocomplete v-model="model.nationality" :md-options="countries"/>
+                    <md-input v-model="model.nationality"/>
             </md-field>
 
             <md-field>
@@ -97,7 +97,6 @@
 <script>
 
     export default {
-        name: 'AutocompleteStatic',
         data: () => ({
                 model: {
                     firstName: "",
@@ -109,18 +108,6 @@
                     zip: "",
                     city: "",
                     country: "",
-                    countries: [
-                        'Denmark',
-                        'Australia',
-                        'Netherlands',
-                        'Belgium',
-                        'Argentina',
-                        'Ukraine',
-                        'Russia',
-                        'Brazil',
-                        'Italy',
-                        'France'
-                    ],
                     birthDate: "",
                     nationality: "",
                     height: "",
