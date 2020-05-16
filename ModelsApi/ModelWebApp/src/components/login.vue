@@ -1,7 +1,7 @@
 <template>
     <div class="md-layout-item">
-        
-            <md-card class="md-layout-item md-size-50 md-small-size-100">
+        <form @submit.prevent="loginfunction">
+            <md-card>
                 <md-ripple>
                     <md-card-header>
                         <div class="md-title">Login</div>
@@ -24,24 +24,50 @@
                     </md-content>
 
                     <md-card-action>
-                        <md-button type="submit" class="md-raised">Login</md-button>
+                        <md-button type="submit">Login</md-button>
                     </md-card-action>
 
 
                 </md-ripple>
             </md-card>
-        
+        </form>
     </div>
 </template>
 
 <script>
+    import router from "../Router";
+
     export default {
         name: 'login',
         data: () => ({
             UserName: 'UserName',
             PassWord: 'Password'
-        })
+        }),
+
+        methods:
+                {
+                    loginfunction() {
+                        var url = "/api/account/login";
+                        var data = {
+                            email: this.UserName,
+                            Password: this.PassWord,
+                            OldPassword: this.PassWord
+                        };
+
+                        fetch(url, {
+                            method: 'POST',
+                            body: JSON.stringify(data),
+                            headers: new Headers({ 'Content-Type': 'application/json' })
+                        }).then(res => res.json()).then((token) => {
+                            localStorage.setItem("token", token.jwt);
+                            router.push("/Home")
+                        }).catch(error => alert("Error!!! " + error))
+                    }
+                }
     };
+   
+        
+    
 </script>
 
 <style scoped>
@@ -56,12 +82,12 @@
         position: relative;
     }
 
-    /*.md-layout-item 
+    .md-layout-item 
     {
         position: relative;
         height: 400px;
         width: 400px;
           
-    }*/
+    }
 </style>
 
