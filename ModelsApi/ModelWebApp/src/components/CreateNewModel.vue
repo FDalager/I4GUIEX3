@@ -1,17 +1,17 @@
 <template>
-    <div class="CreateNewModel">
+    <div class="md-layout-item">
         <h1>Create New Model!</h1>
         <form id="m-app"
               @submit="checkForm">
 
-            <div class="form-group">
+            <md-autocomplete>
                 <p>
                     <label for="firstname">First Name</label>
                     <input type="text" class="form-group"
-                           v-model="model.firstname"
+                           v-model="model.firstname" :md-options="countries"
                            id="firstname">
                 </p>
-            </div>
+            </md-autocomplete>
 
             <div class="form-group">
                 <p>
