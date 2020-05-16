@@ -1,139 +1,104 @@
 <template>
     <div class="md-layout-item">
-        <form id="m-app"
-              @submit="checkForm">
-        <md-card>
-            <md-ripple>
-            <md-card-header>
+        <form
+              @submit.prevent="createmodel">
+            <md-header>
                 <div class="md-title">Create New Model</div>
-            </md-card-header>
+            </md-header>
             <md-content>
             <md-field>
-                    <label for="firstname">First Name</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.firstname" :md-options="countries"
-                           id="firstname"/>
+                    <label>First Name</label>
+                    <md-input v-model="model.firstname" :md-options="countries"/>
             </md-field>
 
             <md-field>
-                    <label for="lastname">Last Name</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.lastname"
-                           id="lastname"/>
+                    <label>Last Name</label>
+                    <md-input v-model="model.lastname"/>
             </md-field>
 
             <md-field>
-                    <label for="email">Email</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.email"
-                           id="email"/>
+                    <label>Email</label>
+                    <md-input v-model="model.email"/>
             </md-field>
 
             <md-field>
-                    <label for="phoneno">Phone Number</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.phoneno"
-                           id="phoneno"/>
+                    <label>Phone Number</label>
+                    <md-input v-model="model.phoneno"/>
             </md-field>
 
             <md-field>
-                    <label for="addresline1">Addres Line 1</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.addresline1"
-                           id="addresline1"/>
+                    <label>Addres Line 1</label>
+                    <md-input v-model="model.addresline1"/>
             </md-field>
 
             <md-field>
-                    <label for="addresline2">Addres Line 2</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.addresline2"
-                           id="adressline2"/>
+                    <label>Addres Line 2</label>
+                    <md-input v-model="model.addresline2"/>
             </md-field>
 
             <md-field>
-                    <label for="zip">Zip</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.zip"
-                           id="zip"/>
+                    <label>Zip</label>
+                    <md-input v-model="model.zip"/>
             </md-field>
 
             <md-field>
-                    <label for="city">City</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.city"
-                           id="city"/>
+                    <label>City</label>
+                    <md-input v-model="model.city"/>
             </md-field>
 
             <md-field>
-                    <label for="country">Country</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.country"
-                           id="country"/>
+                    <label>Country</label>
+                    <md-autocomplete v-model="model.country" :md-options="countries"/>
             </md-field>
 
             <md-field>
-                    <label for="birthdate">Birthdate</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.birthdate"
-                           id="birthdate"/>
+                    <label>Birthdate</label>
+                    <md-input v-model="model.birthdate"/>
             </md-field>
 
             <md-field>
-                    <label for="nationality">Nationality</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.nationality"
-                           id="nationality"/>
+                    <label>Nationality</label>
+                    <md-autocomplete v-model="model.nationality" :md-options="countries"/>
             </md-field>
 
             <md-field>
-                    <label for="height">Height</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.height"
-                           id="height"/>
+                    <label>Height</label>
+                    <md-input v-model="model.height"/>
             </md-field>
 
             <md-field>
-                    <label for="shoesize">Shoesize</label>
-                    <md-input type="text" class="form-group"
-                           v-model.number="model.shoesize"
-                           id="shoesize"/>
+                    <label>Shoesize</label>
+                    <md-input v-model.number="model.shoesize"/>
             </md-field>
 
             <md-field>
-                    <label for="haircolor">Haircolor</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.haircolor"
-                           id="haircolor"/>
+                    <label>Haircolor</label>
+                    <md-input v-model="model.haircolor"/>
             </md-field>
 
             <md-field>
-                    <label for="eyecolor">Eyecolor</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.eyecolor"
-                           id="eyecolor"/>
+                    <label>Eyecolor</label>
+                    <md-input v-model="model.eyecolor"/>
             </md-field>
 
             <md-field>
-                    <label for="comment">Comment</label>
-                    <md-input type="text" class="form-group"
-                           v-model="model.comment"
-                           id="comment"/>
+                    <label>Comment</label>
+                    <md-textarea v-model="model.comment"/>
             </md-field>
+
             </md-content>
-            <md-card-action>
+            <md-action>
                 <md-button type="submit">Add New Model</md-button>
-            </md-card-action>
-            </md-ripple>
-        </md-card>
+            </md-action>
         </form>    
     </div>
 </template>
 
 <script>
-   
+
     export default {
-        data() {
-            return {
+        name: 'AutocompleteStatic',
+        data: () => ({
                 model: {
                     firstName: "",
                     lastName: "",
@@ -144,6 +109,18 @@
                     zip: "",
                     city: "",
                     country: "",
+                    countries: [
+                        'Denmark',
+                        'Australia',
+                        'Netherlands',
+                        'Belgium',
+                        'Argentina',
+                        'Ukraine',
+                        'Russia',
+                        'Brazil',
+                        'Italy',
+                        'France'
+                    ],
                     birthDate: "",
                     nationality: "",
                     height: "",
@@ -152,8 +129,7 @@
                     eyeColor: "",
                     comments: "",
                 }
-            }
-        }
+        })
     }
 
 </script>
