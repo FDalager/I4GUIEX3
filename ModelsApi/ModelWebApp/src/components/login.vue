@@ -11,13 +11,13 @@
                        
                         <md-field md-clearable class="userNameField">
                             <label>UserName</label>
-                            <md-input> v-model="UserName"</md-input>
+                            <md-input v-model="UserName"></md-input>
                             <md-option value="center">Center</md-option>
                         </md-field>
 
                         <md-field class="passwordField">
                             <label>Password</label>
-                            <md-input> v-model="Password"</md-input>
+                            <md-input v-model="Password" type="password"></md-input>
                             <md-option value="center">Center</md-option>
                         </md-field>
                         
@@ -60,7 +60,7 @@
                             headers: new Headers({ 'Content-Type': 'application/json' })
                         }).then(res => res.json()).then((token) => {
                             localStorage.setItem("token", token.jwt);
-                            router.push("/Home")
+                            router.push("/")
                         }).catch(error => alert("Error!!! " + error))
                     }
                 }

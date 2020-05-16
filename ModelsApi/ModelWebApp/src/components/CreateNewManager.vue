@@ -1,32 +1,31 @@
 <template>
     <div class="CreateNewManager">
         <form @submit ="createNewManagerFunction">
-            <md-card>
+            <md-card class="md-layout-item">
                     <md-card-header>
                         <div class="md-title">Create New Manager</div>
                     </md-card-header>
                     <md-content>
                         <md-field>
-                            <label for="firstname">First Name</label>
-                            <md-input type="text" class="form-group"
-                                      v-model="model.firstname" :md-options="countries"
-                                      id="firstname" />
+                            <label>First Name</label>
+                            <md-input v-model="managerfirstname"/>
                         </md-field>
 
                         <md-field>
-                            <label for="lastname">Last Name</label>
-                            <md-input type="text" class="form-group"
-                                      v-model="model.lastname"
-                                      id="lastname" />
+                            <label>Last Name</label>
+                            <md-input v-model="managerlastname" />
                         </md-field>
 
                         <md-field>
-                            <label for="email">Email</label>
-                            <md-input type="text" class="form-group"
-                                      v-model="model.email"
-                                      id="email" />
+                            <label>Email</label>
+                            <md-input v-model="manageremail"/>
                         </md-field>
-                     </md-content>
+
+                        <md-field>
+                            <label>Password</label>
+                            <md-input v-model="managerpassword" type="password"/>
+                        </md-field>
+                    </md-content>
            </md-card>
         </form> 
     </div>
@@ -35,11 +34,41 @@
 <script>
     export default {
         name: 'CreateNewManager',
-        props: {
-            msg: String
+        data: () => ({
+            managerlastname: '',
+            managerfirstname: '',
+            manageremail: '',
+            managerpassword: ''
+        }),
+
+        methods: {
+            createNewManagerFunction() {
+                var url = "https://localhost:44368/api/Managers";
+                var data = {
+                    "firstname": this.managerfirstname,
+                    "lastname": this.managerlastname,
+                    "email": this.manageremail,
+                    "password": this.managerpassword
+                };
+                fetch(url, {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    credentials: 'include',
+                    headers: new Headers({
+                        'Authorization': 'Bearer ' + localStorage.getItem("token"),
+                        'Content-Type': 'application/json'
+                    })
+                }).then(router.push("/")
+                ).catch(error => alert("Error!!! " + error))
+            }
         }
-    };
+    }
 </script>
 
 <style scoped>
+    .md-layout-item {
+        position: relative;
+        height: 400px;
+        width: 400px;
+    }
 </style>
