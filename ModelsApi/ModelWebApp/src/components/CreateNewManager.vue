@@ -59,7 +59,7 @@
                         'Content-Type': 'application/json'
                     })
                 })
-                ).catch(error => alert("Error!!! " + error))
+                .catch(error => alert("Error!!! " + error))
             }
         }
     }
