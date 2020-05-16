@@ -1,6 +1,6 @@
 <template>
     <div class="md-layout-item">
-        <form @submit.prevent="loginfunction">
+        <form @submit="loginfunction">
             <md-card>
                 <md-ripple>
                     <md-card-header>
