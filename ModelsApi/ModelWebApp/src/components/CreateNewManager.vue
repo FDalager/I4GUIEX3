@@ -58,7 +58,7 @@
                         'Authorization': 'Bearer ' + localStorage.getItem("token"),
                         'Content-Type': 'application/json'
                     })
-                }).then(router.push("/")
+                })
                 ).catch(error => alert("Error!!! " + error))
             }
         }
