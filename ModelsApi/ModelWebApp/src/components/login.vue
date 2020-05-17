@@ -23,9 +23,9 @@
                         
                     </md-content>
 
-                    <md-card-action>
+                    <md-card-actions>
                         <md-button type="submit">Login</md-button>
-                    </md-card-action>
+                    </md-card-actions>
 
 
                 </md-ripple>
@@ -47,6 +47,7 @@
         methods:
                 {
                     loginfunction() {
+                        //this.$http.post('http')
                         var url = "/api/account/login";
                         var data = {
                             email: this.UserName,
