@@ -1,6 +1,0 @@
-C:\Users\Jonathan\Desktop\GUI_EX3\ModelsApi\ModelWebApp\obj\Debug\ModelWebApp.njsproj.CoreCompileInputs.cache
-C:\Users\Jonathan\Desktop\GUI_EX3\ModelsApi\ModelWebApp\bin\Microsoft.NodejsTools.WebRole.dll
-C:\Users\Jonathan\Desktop\GUI_EX3\ModelsApi\ModelWebApp\obj\Debug\ModelWebApp.njsprojAssemblyReference.cache
-C:\Users\sebbe\Source\Repos\I4GUIEX3\ModelsApi\ModelWebApp\obj\Debug\ModelWebApp.njsproj.CoreCompileInputs.cache
-C:\Users\sebbe\Source\Repos\I4GUIEX3\ModelsApi\ModelWebApp\bin\Microsoft.NodejsTools.WebRole.dll
-C:\Users\sebbe\source\repos\I4GUIEX3\ModelsApi\ModelWebApp\obj\Debug\ModelWebApp.njsprojAssemblyReference.cache
