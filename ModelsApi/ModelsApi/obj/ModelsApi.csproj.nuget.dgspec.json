@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
+    "C:\\Users\\sebbe\\Source\\Repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
+    "C:\\Users\\sebbe\\Source\\Repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "projectUniqueName": "C:\\Users\\sebbe\\Source\\Repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
         "projectName": "ModelsApi",
-        "projectPath": "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+        "projectPath": "C:\\Users\\sebbe\\Source\\Repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
         "packagesPath": "C:\\Users\\sebbe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\obj\\",
+        "outputPath": "C:\\Users\\sebbe\\Source\\Repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

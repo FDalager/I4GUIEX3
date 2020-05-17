@@ -26,9 +26,9 @@
                         <md-input v-model="managerpassword" type="password" />
                     </md-field>
                 </md-content>
-                <md-card-action>
+                <md-card-actions>
                     <md-button type="submit" class="md-raised">Add New Manager</md-button>
-                </md-card-action>
+                </md-card-actions>
 
             </md-card>
         </form> 
@@ -47,7 +47,7 @@
 
         methods: {
             createNewManagerFunction() {
-                var url = "https://localhost:44368/api/Managers";
+                var url = "http://localhost:8080/CreateNewManager";
                 var data = {
                     "firstname": this.managerfirstname,
                     "lastname": this.managerlastname,

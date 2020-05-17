@@ -2,13 +2,12 @@
     <div class="md-layout-item">
         <form
               @submit.prevent="createmodel">
-            <md-header>
+        
                 <div class="md-title">Create New Model</div>
-            </md-header>
             <md-content>
             <md-field>
                     <label>First Name</label>
-                    <md-input v-model="model.firstname" :md-options="countries"/>
+                    <md-input v-model="model.firstname"/>
             </md-field>
 
             <md-field>
@@ -87,9 +86,9 @@
             </md-field>
 
             </md-content>
-            <md-action>
+           
                 <md-button type="submit">Add New Model</md-button>
-            </md-action>
+
         </form>    
     </div>
 </template>

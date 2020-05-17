@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W2kE/ZZHVGZwEtloa8T57pBFjRzCWgIAqCRFn1S93plSPeoxTKgHaeQsYv36m0NA5A52pV0//zZsuxKilPs5sg==",
+  "dgSpecHash": "NQOFcZh5mAZEPho50LlFFStmfxuKnyDB17mVWIOkNFoHJ5600OJTZ9tQuPVt7ehTfzCbOYsxA3Dxy3oWAJpyww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebbe\\source\\repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
+  "projectFilePath": "C:\\Users\\sebbe\\Source\\Repos\\I4GUIEX3\\ModelsApi\\ModelsApi\\ModelsApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebbe\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\sebbe\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

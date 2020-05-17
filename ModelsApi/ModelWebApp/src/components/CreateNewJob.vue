@@ -31,9 +31,9 @@
                     </md-field>
                      
                 </md-content>
-                <md-card-action>
+                <md-card-actions>
                     <md-button type="submit" class="md-raised">Add New Job</md-button>
-                </md-card-action>
+                </md-card-actions>
 
             </md-card>
         </form> 
@@ -46,7 +46,7 @@
         data: () => ({
             customer:"",
             startdate:"",
-            days:"",
+            days: 0,
             location:"",
             comment:""
         }),
