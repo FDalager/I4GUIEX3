@@ -116,10 +116,27 @@
                     eyeColor: "",
                     comments: "",
                 }
-        })
+        }),
+        methods: {
+                createNewModelFunction(){
+                var url = "/api/Models";
+                var data = {
+                    "model" : this.model
+                };
+                fetch(url, {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    credentials: 'include',
+                    headers: new Headers({
+                        'Authorization': 'Bearer ' + localStorage.getItem("token"),
+                        'Content-Type': 'application/json'
+                    })
+                }).catch(error => alert("Error!!! " + error))} 
+
+        }
     }
 
-
+    
 
 </script>
 
