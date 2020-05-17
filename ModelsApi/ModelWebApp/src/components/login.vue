@@ -26,8 +26,6 @@
                     <md-card-action>
                         <md-button type="submit">Login</md-button>
                     </md-card-action>
-
-
                 </md-ripple>
             </md-card>
         </form>
