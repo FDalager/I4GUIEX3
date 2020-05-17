@@ -1,13 +1,13 @@
 <template>
     <div class="md-layout-item">
-        <form @submit="loginfunction">
+        <form @submit.prevent="loginfunction">
             <md-card>
                 <md-ripple>
                     <md-card-header>
                         <div class="md-title">Login</div>
                     </md-card-header>
 
-                    <md-content>
+                    <md-card-content>
                        
                         <md-field md-clearable class="userNameField">
                             <label>UserName</label>
@@ -21,11 +21,13 @@
                             <md-option value="center">Center</md-option>
                         </md-field>
                         
-                    </md-content>
+                    </md-card-content>
 
-                    <md-card-action>
+                    <md-card-actions>
                         <md-button type="submit">Login</md-button>
-                    </md-card-action>
+                    </md-card-actions>
+
+
                 </md-ripple>
             </md-card>
         </form>
@@ -45,6 +47,7 @@
         methods:
                 {
                     loginfunction() {
+                        
                         var url = "/api/account/login";
                         var data = {
                             email: this.UserName,

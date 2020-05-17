@@ -2,13 +2,12 @@
     <div class="md-layout-item">
         <form
               @submit.prevent="createmodel">
-            <md-header>
+        
                 <div class="md-title">Create New Model</div>
-            </md-header>
             <md-content>
             <md-field>
                     <label>First Name</label>
-                    <md-input v-model="model.firstname" :md-options="countries"/>
+                    <md-input v-model="model.firstname"/>
             </md-field>
 
             <md-field>
@@ -87,9 +86,9 @@
             </md-field>
 
             </md-content>
-            <md-action>
+           
                 <md-button type="submit">Add New Model</md-button>
-            </md-action>
+
         </form>    
     </div>
 </template>
@@ -97,6 +96,7 @@
 <script>
 
     export default {
+        name: 'CreateNewModel',
         data: () => ({
                 model: {
                     firstName: "",
@@ -116,8 +116,27 @@
                     eyeColor: "",
                     comments: "",
                 }
-        })
+        }),
+        methods: {
+                createNewModelFunction(){
+                var url = "/api/Models";
+                var data = {
+                    "model" : this.model
+                };
+                fetch(url, {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    credentials: 'include',
+                    headers: new Headers({
+                        'Authorization': 'Bearer ' + localStorage.getItem("token"),
+                        'Content-Type': 'application/json'
+                    })
+                }).catch(error => alert("Error!!! " + error))} 
+
+        }
     }
+
+    
 
 </script>
 
